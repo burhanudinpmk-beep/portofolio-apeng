@@ -1,0 +1,487 @@
+/* =========================================================
+   ANIMATIONS.CSS
+   Final Motion System
+   Compatible with Modern Rounded UI
+========================================================= */
+
+
+/* =========================================================
+   HERO ROTATING TEXT
+========================================================= */
+
+.hero-animated-text {
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+/* Text keluar */
+
+.hero-animated-text.text-exit {
+    opacity: 0;
+
+    transform:
+        translateY(-14px);
+}
+
+
+/* Text masuk */
+
+.hero-animated-text.text-enter {
+    opacity: 0;
+
+    transform:
+        translateY(14px);
+}
+
+
+/* =========================================================
+   REVEAL BASE
+========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform:
+        translateY(28px);
+
+    transition:
+        opacity 0.7s var(--ease-smooth),
+        transform 0.7s var(--ease-smooth);
+
+    will-change:
+        opacity,
+        transform;
+}
+
+
+.reveal.active {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================================================
+   REVEAL LEFT
+========================================================= */
+
+.reveal-left {
+    opacity: 0;
+
+    transform:
+        translateX(-36px);
+}
+
+
+.reveal-left.active {
+    opacity: 1;
+
+    transform:
+        translateX(0);
+}
+
+
+/* =========================================================
+   REVEAL RIGHT
+========================================================= */
+
+.reveal-right {
+    opacity: 0;
+
+    transform:
+        translateX(36px);
+}
+
+
+.reveal-right.active {
+    opacity: 1;
+
+    transform:
+        translateX(0);
+}
+
+
+/* =========================================================
+   REVEAL SCALE
+========================================================= */
+
+.reveal-scale {
+    opacity: 0;
+
+    transform:
+        scale(0.965);
+}
+
+
+.reveal-scale.active {
+    opacity: 1;
+
+    transform:
+        scale(1);
+}
+
+
+/* =========================================================
+   STAGGER
+========================================================= */
+
+.reveal-delay-1 {
+    transition-delay: 0.08s;
+}
+
+.reveal-delay-2 {
+    transition-delay: 0.16s;
+}
+
+.reveal-delay-3 {
+    transition-delay: 0.24s;
+}
+
+.reveal-delay-4 {
+    transition-delay: 0.32s;
+}
+
+.reveal-delay-5 {
+    transition-delay: 0.40s;
+}
+
+
+/* =========================================================
+   HERO INTRO
+   Optional animation for hero
+========================================================= */
+
+@keyframes heroFadeUp {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+@keyframes heroImageIn {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(-24px)
+            scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(0)
+            scale(1);
+    }
+
+}
+
+
+.hero-content {
+    animation:
+        heroFadeUp
+        0.8s
+        var(--ease-smooth)
+        both;
+}
+
+
+.hero-image {
+    animation:
+        heroImageIn
+        0.85s
+        var(--ease-smooth)
+        both;
+
+    animation-delay:
+        0.08s;
+}
+
+
+/* =========================================================
+   FLOATING AMBIENT ANIMATION
+========================================================= */
+
+@keyframes ambientFloat {
+
+    0%,
+    100% {
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+    }
+
+    50% {
+        transform:
+            translate3d(0, -12px, 0)
+            scale(1.03);
+    }
+
+}
+
+
+/* subtle glow movement */
+
+.hero::before,
+.contact-cta::before,
+.site-footer::before {
+    animation:
+        ambientFloat
+        9s ease-in-out
+        infinite;
+}
+
+
+/* =========================================================
+   BUTTON SHINE
+   Button main CSS already defines ::before
+========================================================= */
+
+.btn:hover::before,
+.navbar-cv:hover::before {
+    transform:
+        translateX(130%);
+}
+
+
+/* =========================================================
+   CARD TRANSITIONS
+   Do not overwrite card transforms
+========================================================= */
+
+.project-card,
+.info-card,
+.skill-card,
+.certificate-card,
+.achievement-card,
+.experience-content {
+    transition:
+        transform var(--transition-base),
+        box-shadow var(--transition-base),
+        border-color var(--transition-base),
+        background-color var(--transition-base);
+}
+
+
+/* =========================================================
+   IMAGE MOTION
+========================================================= */
+
+.project-image img,
+.certificate-preview img,
+.hero-image-wrapper img,
+.about-image img {
+    transition:
+        transform var(--transition-slow),
+        filter var(--transition-base);
+}
+
+
+/* =========================================================
+   LINK MICRO MOTION
+========================================================= */
+
+.social-link,
+.contact-socials a,
+.footer-links a,
+.text-link {
+    transition:
+        color var(--transition-fast),
+        background-color var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+
+/* =========================================================
+   THEME ICON MOTION
+========================================================= */
+
+.theme-icon {
+    transition:
+        opacity var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.back-to-top {
+    transition:
+        opacity var(--transition-fast),
+        visibility var(--transition-fast),
+        transform var(--transition-fast),
+        background-color var(--transition-fast),
+        color var(--transition-fast),
+        box-shadow var(--transition-fast);
+}
+
+
+/* =========================================================
+   CERTIFICATE MODAL
+========================================================= */
+
+.certificate-modal-content {
+    transition:
+        opacity 0.25s var(--ease-smooth),
+        transform 0.25s var(--ease-smooth);
+}
+
+
+.certificate-modal.open
+.certificate-modal-content {
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================================
+   PULSE UTILITY
+========================================================= */
+
+@keyframes softPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 0
+            rgba(37, 99, 235, 0.14);
+    }
+
+    50% {
+        box-shadow:
+            0 0 0 8px
+            rgba(37, 99, 235, 0);
+    }
+
+}
+
+
+.pulse {
+    animation:
+        softPulse
+        2.2s ease-in-out
+        infinite;
+}
+
+
+/* =========================================================
+   MOBILE OPTIMIZATION
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero-content,
+    .hero-image {
+        animation-duration:
+            0.65s;
+    }
+
+
+    .reveal,
+    .reveal-left,
+    .reveal-right,
+    .reveal-scale {
+        transition-duration:
+            0.6s;
+    }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICE
+   Avoid fake hover motion
+========================================================= */
+
+@media
+(hover: none)
+and
+(pointer: coarse) {
+
+    .project-card,
+    .info-card,
+    .skill-card,
+    .certificate-card,
+    .achievement-card,
+    .experience-content,
+    .btn,
+    .social-link,
+    .contact-socials a,
+    .footer-links a {
+        transition-duration:
+            0.2s;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media
+(prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation:
+            none !important;
+
+        transition-duration:
+            0.01ms !important;
+
+        scroll-behavior:
+            auto !important;
+    }
+
+
+    .reveal,
+    .reveal-left,
+    .reveal-right,
+    .reveal-scale {
+        opacity:
+            1 !important;
+
+        transform:
+            none !important;
+    }
+
+
+    .hero-content,
+    .hero-image {
+        opacity:
+            1 !important;
+
+        transform:
+            none !important;
+    }
+
+}

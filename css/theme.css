@@ -1,0 +1,973 @@
+/* =========================================================
+   THEME.CSS
+   Final Light / Dark Theme
+   Modern Portfolio UI
+   Blue / Cyan / Violet
+========================================================= */
+
+
+/* =========================================================
+   LIGHT MODE
+========================================================= */
+
+:root {
+
+    /* =====================================================
+       BACKGROUND
+    ====================================================== */
+
+    --color-background:
+        #f8faff;
+
+    --color-background-secondary:
+        #f4f7fb;
+
+
+    /* =====================================================
+       SURFACE
+    ====================================================== */
+
+    --color-surface:
+        #ffffff;
+
+    --color-surface-secondary:
+        #f3f7fd;
+
+    --color-surface-tertiary:
+        #eef4fb;
+
+
+    /* =====================================================
+       TEXT
+    ====================================================== */
+
+    --color-text-primary:
+        #101828;
+
+    --color-text-secondary:
+        #475467;
+
+    --color-text-muted:
+        #667085;
+
+    --color-text-soft:
+        #98a2b3;
+
+
+    /* =====================================================
+       BORDER
+    ====================================================== */
+
+    --color-border:
+        #dce5f0;
+
+    --color-border-soft:
+        #e8eef6;
+
+    --color-border-strong:
+        #b9c8dd;
+
+
+    /* =====================================================
+       CARD
+    ====================================================== */
+
+    --color-card-background:
+        #ffffff;
+
+    --color-card-secondary:
+        #f7faff;
+
+
+    /* =====================================================
+       NAVBAR
+    ====================================================== */
+
+    --color-navbar-background:
+        rgba(
+            248,
+            250,
+            255,
+            0.84
+        );
+
+
+    --color-navbar-border:
+        rgba(
+            37,
+            99,
+            235,
+            0.08
+        );
+
+
+    /* =====================================================
+       IMAGE
+    ====================================================== */
+
+    --color-image-placeholder:
+        #eaf1fb;
+
+
+    /* =====================================================
+       OVERLAY
+    ====================================================== */
+
+    --color-overlay:
+        rgba(
+            15,
+            23,
+            42,
+            0.72
+        );
+
+
+    /* =====================================================
+       ACCENT
+    ====================================================== */
+
+    --color-accent:
+        var(--color-primary);
+
+    --color-accent-hover:
+        var(--color-primary-dark);
+
+    --color-accent-text:
+        #ffffff;
+
+
+    /* =====================================================
+       SCROLLBAR
+    ====================================================== */
+
+    --color-scrollbar-track:
+        #eef3f9;
+
+    --color-scrollbar-thumb:
+        #b8c7da;
+
+    --color-scrollbar-thumb-hover:
+        #94a8c4;
+
+
+    /* =====================================================
+       SELECTION
+    ====================================================== */
+
+    --color-selection:
+        rgba(
+            37,
+            99,
+            235,
+            0.18
+        );
+
+
+    color-scheme:
+        light;
+}
+
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+html.dark {
+
+    /* =====================================================
+       BACKGROUND
+    ====================================================== */
+
+    --color-background:
+        #080d18;
+
+    --color-background-secondary:
+        #0b1220;
+
+
+    /* =====================================================
+       SURFACE
+    ====================================================== */
+
+    --color-surface:
+        #0f172a;
+
+    --color-surface-secondary:
+        #111c33;
+
+    --color-surface-tertiary:
+        #17243b;
+
+
+    /* =====================================================
+       TEXT
+    ====================================================== */
+
+    --color-text-primary:
+        #f8fafc;
+
+    --color-text-secondary:
+        #b7c2d2;
+
+    --color-text-muted:
+        #8694a8;
+
+    --color-text-soft:
+        #64748b;
+
+
+    /* =====================================================
+       BORDER
+    ====================================================== */
+
+    --color-border:
+        #1e2c43;
+
+    --color-border-soft:
+        #182338;
+
+    --color-border-strong:
+        #334766;
+
+
+    /* =====================================================
+       CARD
+    ====================================================== */
+
+    --color-card-background:
+        #0f172a;
+
+    --color-card-secondary:
+        #111c33;
+
+
+    /* =====================================================
+       NAVBAR
+    ====================================================== */
+
+    --color-navbar-background:
+        rgba(
+            8,
+            13,
+            24,
+            0.86
+        );
+
+
+    --color-navbar-border:
+        rgba(
+            96,
+            165,
+            250,
+            0.12
+        );
+
+
+    /* =====================================================
+       IMAGE
+    ====================================================== */
+
+    --color-image-placeholder:
+        #111c2e;
+
+
+    /* =====================================================
+       OVERLAY
+    ====================================================== */
+
+    --color-overlay:
+        rgba(
+            2,
+            6,
+            23,
+            0.82
+        );
+
+
+    /* =====================================================
+       ACCENT
+    ====================================================== */
+
+    --color-accent:
+        var(--color-primary-light);
+
+    --color-accent-hover:
+        var(--color-primary-soft);
+
+    --color-accent-text:
+        #ffffff;
+
+
+    /* =====================================================
+       SCROLLBAR
+    ====================================================== */
+
+    --color-scrollbar-track:
+        #0d1524;
+
+    --color-scrollbar-thumb:
+        #31425c;
+
+    --color-scrollbar-thumb-hover:
+        #46607f;
+
+
+    /* =====================================================
+       SELECTION
+    ====================================================== */
+
+    --color-selection:
+        rgba(
+            59,
+            130,
+            246,
+            0.24
+        );
+
+
+    color-scheme:
+        dark;
+}
+
+
+
+/* =========================================================
+   HTML / BODY
+========================================================= */
+
+html {
+    background:
+        var(--color-background);
+
+    color:
+        var(--color-text-primary);
+}
+
+
+body {
+    background:
+        var(--color-background);
+
+    color:
+        var(--color-text-primary);
+
+    transition:
+        background-color
+            var(--transition-base),
+        color
+            var(--transition-base);
+}
+
+
+
+/* =========================================================
+   GLOBAL THEME TRANSITION
+========================================================= */
+
+body,
+header,
+nav,
+main,
+section,
+article,
+aside,
+footer,
+div,
+button,
+a,
+input,
+textarea,
+select {
+    transition:
+        background-color
+            var(--transition-base),
+        color
+            var(--transition-base),
+        border-color
+            var(--transition-base);
+}
+
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color:
+        var(--color-text-primary);
+}
+
+
+p {
+    color:
+        var(--color-text-secondary);
+}
+
+
+small {
+    color:
+        var(--color-text-muted);
+}
+
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+    color:
+        var(--color-text-primary);
+}
+
+
+
+/* =========================================================
+   FORM ELEMENTS
+========================================================= */
+
+input,
+textarea,
+select {
+    background:
+        var(--color-surface);
+
+    color:
+        var(--color-text-primary);
+
+    border:
+        1px solid
+        var(--color-border);
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    color:
+        var(--color-text-muted);
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color:
+        var(--color-primary);
+
+    outline:
+        none;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(
+            37,
+            99,
+            235,
+            0.10
+        );
+}
+
+
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection {
+    background:
+        var(--color-selection);
+
+    color:
+        var(--color-text-primary);
+}
+
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background:
+        var(--color-scrollbar-track);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background:
+        var(--color-scrollbar-thumb);
+
+    border:
+        2px solid
+        var(--color-scrollbar-track);
+
+    border-radius:
+        var(--radius-round);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background:
+        var(--color-scrollbar-thumb-hover);
+}
+
+
+
+/* =========================================================
+   BUTTON THEME
+========================================================= */
+
+.btn-primary {
+    background:
+        var(--gradient-primary);
+
+    color:
+        #ffffff;
+
+    border-color:
+        transparent;
+
+    box-shadow:
+        0 10px 28px
+        rgba(
+            37,
+            99,
+            235,
+            0.18
+        );
+}
+
+
+.btn-primary:hover {
+    box-shadow:
+        0 16px 38px
+        rgba(
+            37,
+            99,
+            235,
+            0.28
+        );
+}
+
+
+.btn-secondary {
+    background:
+        var(--color-surface);
+
+    color:
+        var(--color-text-primary);
+
+    border:
+        1px solid
+        var(--color-border);
+}
+
+
+.btn-secondary:hover {
+    color:
+        var(--color-primary);
+
+    border-color:
+        rgba(
+            37,
+            99,
+            235,
+            0.30
+        );
+
+    background:
+        rgba(
+            37,
+            99,
+            235,
+            0.06
+        );
+}
+
+
+html.dark
+.btn-secondary:hover {
+    color:
+        #60a5fa;
+
+    border-color:
+        rgba(
+            96,
+            165,
+            250,
+            0.25
+        );
+
+    background:
+        rgba(
+            59,
+            130,
+            246,
+            0.10
+        );
+}
+
+
+
+/* =========================================================
+   SECTION NUMBERS / SMALL LABEL
+========================================================= */
+
+.section-number {
+    color:
+        var(--color-primary);
+
+    font-weight:
+        var(--font-weight-semibold);
+}
+
+
+html.dark
+.section-number {
+    color:
+        #60a5fa;
+}
+
+
+
+/* =========================================================
+   TEXT LINK
+========================================================= */
+
+.text-link {
+    color:
+        var(--color-text-primary);
+}
+
+
+.text-link:hover {
+    color:
+        var(--color-primary);
+}
+
+
+html.dark
+.text-link:hover {
+    color:
+        #60a5fa;
+}
+
+
+
+/* =========================================================
+   CARD BASE
+========================================================= */
+
+.info-card,
+.project-card,
+.skill-card,
+.achievement-card,
+.certificate-card,
+.experience-content {
+    background-color:
+        var(--color-card-background);
+
+    border-color:
+        var(--color-border);
+}
+
+
+
+/* =========================================================
+   NAVBAR THEME
+========================================================= */
+
+.site-header.scrolled {
+    background:
+        var(--color-navbar-background);
+
+    border-bottom-color:
+        var(--color-navbar-border);
+}
+
+
+.theme-toggle {
+    color:
+        var(--color-text-primary);
+}
+
+
+.theme-toggle:hover {
+    background:
+        rgba(
+            37,
+            99,
+            235,
+            0.07
+        );
+
+    border-color:
+        rgba(
+            37,
+            99,
+            235,
+            0.22
+        );
+}
+
+
+html.dark
+.theme-toggle:hover {
+    background:
+        rgba(
+            59,
+            130,
+            246,
+            0.10
+        );
+
+    border-color:
+        rgba(
+            96,
+            165,
+            250,
+            0.22
+        );
+}
+
+
+
+/* =========================================================
+   CERTIFICATE MODAL THEME
+========================================================= */
+
+.certificate-modal-content {
+    background:
+        var(--color-surface);
+
+    border-color:
+        var(--color-border);
+}
+
+
+.certificate-modal-overlay {
+    background:
+        var(--color-overlay);
+}
+
+
+.certificate-modal-close {
+    background:
+        var(--color-surface-secondary);
+
+    color:
+        var(--color-text-primary);
+
+    border-color:
+        var(--color-border);
+}
+
+
+.certificate-modal-close:hover {
+    background:
+        var(--gradient-primary);
+
+    color:
+        #ffffff;
+
+    border-color:
+        transparent;
+}
+
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.back-to-top {
+    background:
+        var(--color-surface);
+
+    color:
+        var(--color-text-primary);
+
+    border-color:
+        var(--color-border);
+}
+
+
+.back-to-top:hover {
+    background:
+        var(--gradient-primary);
+
+    color:
+        #ffffff;
+
+    border-color:
+        transparent;
+}
+
+
+
+/* =========================================================
+   DARK MODE GLOW ADJUSTMENT
+========================================================= */
+
+html.dark
+.hero::before {
+    opacity:
+        1.15;
+}
+
+
+html.dark
+.hero::after {
+    opacity:
+        1.1;
+}
+
+
+html.dark
+.contact-cta::before {
+    opacity:
+        1.15;
+}
+
+
+
+/* =========================================================
+   DARK MODE IMAGE
+========================================================= */
+
+html.dark
+.hero-image-wrapper,
+html.dark
+.about-image {
+    border-color:
+        rgba(
+            96,
+            165,
+            250,
+            0.18
+        );
+}
+
+
+
+/* =========================================================
+   DARK MODE CARD SHADOW
+========================================================= */
+
+html.dark
+.info-card,
+html.dark
+.project-card,
+html.dark
+.skill-card,
+html.dark
+.certificate-card,
+html.dark
+.experience-content {
+
+    box-shadow:
+        0 10px 35px
+        rgba(
+            0,
+            0,
+            0,
+            0.22
+        );
+}
+
+
+
+/* =========================================================
+   DARK MODE TAGS
+========================================================= */
+
+html.dark
+.project-tags span,
+html.dark
+.skill-tags span {
+
+    color:
+        #60a5fa;
+
+    border-color:
+        rgba(
+            96,
+            165,
+            250,
+            0.20
+        );
+
+    background:
+        rgba(
+            59,
+            130,
+            246,
+            0.10
+        );
+}
+
+
+
+/* =========================================================
+   DARK MODE ACTIVE / HIGHLIGHT
+========================================================= */
+
+html.dark
+.project-number,
+html.dark
+.skill-number,
+html.dark
+.info-card-icon {
+
+    color:
+        #60a5fa;
+
+    background:
+        rgba(
+            59,
+            130,
+            246,
+            0.11
+        );
+}
+
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media
+(prefers-reduced-motion: reduce) {
+
+    body,
+    header,
+    nav,
+    main,
+    section,
+    article,
+    aside,
+    footer,
+    div,
+    button,
+    a,
+    input,
+    textarea,
+    select {
+        transition:
+            none !important;
+    }
+
+}

@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfolio mahasiswa Sistem Informasi yang berfokus pada System Analysis, Web Development, UI/UX Design, dan Project Leadership."
+    >
+
+    <meta
+        name="keywords"
+        content="System Analyst, Web Developer, UI UX, Information Systems, Portfolio, PHP, MySQL, Figma"
+    >
+
+    <meta
+        name="author"
+        content="Apeng"
+    >
+
+    <title>
+        Apeng | Information Systems Portfolio
+    </title>
+
+    <link
+        rel="icon"
+        href="assets/icons/favicon.svg"
+        type="image/svg+xml"
+    >
+
+
+    <!-- =====================================================
+         PREVENT THEME FLASH
+    ====================================================== -->
+
+    <script>
+        (function () {
+
+            const savedTheme =
+                localStorage.getItem("portfolio-theme");
+
+            const systemDark =
+                window.matchMedia(
+                    "(prefers-color-scheme: dark)"
+                ).matches;
+
+            if (
+                savedTheme === "dark" ||
+                (!savedTheme && systemDark)
+            ) {
+
+                document.documentElement
+                    .classList
+                    .add("dark");
+
+            }
+
+        })();
+    </script>
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/variables.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/theme.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/navbar.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/footer.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/pages/home.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/animations.css"
+    >
+
+    <!-- Responsive wajib paling akhir -->
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header
+        id="navbar-container"
+        class="site-header"
+    >
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section
+            class="hero section"
+            id="home"
+        >
+
+            <div class="container hero-container">
+
+
+                <div class="hero-image">
+
+                    <div class="hero-image-wrapper">
+
+                        <img
+                            src="assets/images/profile/foto utama.jpg"
+                            alt="Foto profil Burhan"
+                            loading="eager"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="hero-content">
+
+                    <p class="hero-greeting">
+                        Available for Internship
+                    </p>
+
+
+                    <h1 class="hero-name">
+                        Burhan<span class="hero-name-dot">.</span>
+                    </h1>
+
+
+                    <p class="hero-position">
+                        Information Systems Student
+                    </p>
+
+
+
+                    <div class="hero-focus">
+
+                        <span class="hero-focus-label">
+                            I focus on
+                        </span>
+
+                        <h2
+                            class="hero-animated-text"
+                            id="animated-text"
+                            aria-live="polite"
+                        >
+                            System Analysis
+                        </h2>
+
+                    </div>
+
+
+
+                    <p class="hero-description">
+                        I turn business problems and user needs into
+                        structured digital solutions through system analysis,
+                        web development, and user-centered design.
+                    </p>
+
+
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="#projects"
+                            class="btn btn-primary"
+                        >
+                            View Projects
+                        </a>
+
+                        <a
+                            href="assets/documents/cv.pdf"
+                            class="btn btn-secondary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View CV
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="hero-socials">
+
+                        <a
+                            href="#"
+                            aria-label="GitHub"
+                            class="social-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                        <a
+                            href="#"
+                            aria-label="LinkedIn"
+                            class="social-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+
+                        <a
+                            href="mailto:burhanudinpmk@gmail.com"
+                            aria-label="Email"
+                            class="social-link"
+                        >
+                            Email
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section
+            class="about section"
+            id="about"
+        >
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <span class="section-number">
+                        01 · About
+                    </span>
+
+                    <h2 class="section-title">
+                        Building solutions with analysis and technology.
+                    </h2>
+
+                    <p class="section-description">
+                        My academic and organizational experiences have
+                        shaped my interest in system analysis,
+                        web development, UI/UX, database management,
+                        and digital problem solving.
+                    </p>
+
+                </div>
+
+
+
+                <div class="about-layout">
+
+
+                    <div class="about-image reveal reveal-left">
+
+                        <img
+                            src="assets/images/profile/fotokece.jpeg"
+                            alt="Burhan - Mahasiswa Sistem Informasi"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+
+                    <div class="about-content reveal reveal-right">
+
+                        <p class="about-description">
+                            Saya adalah mahasiswa S1 Sistem Informasi Universitas PGRI Pontianak
+                            yang memiliki ketertarikan pada analisis sistem, pengembangan web,
+                            dan perancangan pengalaman pengguna. Melalui proyek akademik,
+                            proyek bersama UMKM, serta pengalaman organisasi, saya terbiasa
+                            mengidentifikasi kebutuhan, menyusun solusi secara terstruktur,
+                            mengembangkan sistem berbasis web, dan mengelola dokumentasi.
+                            Saya terus mengembangkan kompetensi teknis dan profesional untuk
+                            mempersiapkan diri berkontribusi dalam pengembangan solusi digital
+                            yang efektif, relevan, dan berorientasi pada kebutuhan pengguna.
+                        </p>
+
+
+
+                        <div class="about-cards">
+
+                            <article class="info-card">
+
+                                <span class="info-card-icon">
+                                    01
+                                </span>
+
+                                <h3>
+                                    Education
+                                </h3>
+
+                                <p>
+                                    S1 Sistem Informasi
+                                </p>
+
+                                <span>
+                                    Universitas PGRI Pontianak
+                                </span>
+
+                            </article>
+
+
+
+                            <article class="info-card">
+
+                                <span class="info-card-icon">
+                                    02
+                                </span>
+
+                                <h3>
+                                    Career Focus
+                                </h3>
+
+                                <p>
+                                    System Analysis
+                                </p>
+
+                                <span>
+                                    Web Development
+                                </span>
+
+                                <span>
+                                    UI/UX Design
+                                </span>
+
+                            </article>
+
+
+
+                            <article class="info-card">
+
+                                <span class="info-card-icon">
+                                    03
+                                </span>
+
+                                <h3>
+                                    Location
+                                </h3>
+
+                                <p>
+                                    Pontianak
+                                </p>
+
+                                <span>
+                                    Indonesia
+                                </span>
+
+                            </article>
+
+                        </div>
+
+
+
+                        <a
+                            href="about.html"
+                            class="text-link"
+                        >
+                            More About Me →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FEATURED PROJECTS
+        ================================================== -->
+
+        <section
+            class="projects section"
+            id="projects"
+        >
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <span class="section-number">
+                        02 · Projects
+                    </span>
+
+                    <h2 class="section-title">
+                        Selected work that shows how I solve problems.
+                    </h2>
+
+                    <p class="section-description">
+                        Projects focused on system analysis,
+                        web development, user experience,
+                        and real-world implementation.
+                    </p>
+
+                </div>
+
+
+
+                <div class="projects-grid">
+
+
+                    <!-- MAJAS COFFEE -->
+
+                    <article class="project-card reveal">
+
+                        <a
+                            href="projects/majas-coffee-roastery.html"
+                            class="project-image"
+                        >
+
+                            <img
+                                src="assets/images/projects/majas/web.jpg"
+                                alt="Website Majas Coffee Roastery"
+                                loading="lazy"
+                            >
+
+                            <span class="project-category">
+                                Real Client Project
+                            </span>
+
+                        </a>
+
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                01
+                            </span>
+
+                            <h3 class="project-title">
+                                Majas Coffee Roastery
+                            </h3>
+
+                            <p class="project-description">
+                                Dynamic company profile and product
+                                management system developed for a real
+                                UMKM client to strengthen digital presence,
+                                information clarity, and catalog management.
+                            </p>
+
+
+                            <div class="project-tags">
+
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>System Analysis</span>
+
+                            </div>
+
+
+                            <div class="project-footer">
+
+                                <span class="project-role">
+                                    Project Leader & Developer
+                                </span>
+
+                                <a
+                                    href="projects/majas-coffee-roastery.html"
+                                    class="text-link"
+                                >
+                                    View Case Study →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- BUS KALBAR -->
+
+                    <article class="project-card reveal">
+
+                        <a
+                            href="projects/bus-kalbar.html"
+                            class="project-image"
+                        >
+
+                            <img
+                                src="assets/images/projects/bus-kalbar/buskalbar desain.jpg"
+                                alt="UI UX Bus Kalbar"
+                                loading="lazy"
+                            >
+
+                            <span class="project-category">
+                                UI/UX Project
+                            </span>
+
+                        </a>
+
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                02
+                            </span>
+
+                            <h3 class="project-title">
+                                Bus Kalbar
+                            </h3>
+
+                            <p class="project-description">
+                                Mobile bus ticket booking concept designed
+                                to simplify the reservation flow from bus
+                                search and seat selection to payment
+                                and digital ticket.
+                            </p>
+
+
+                            <div class="project-tags">
+
+                                <span>Figma</span>
+                                <span>User Flow</span>
+                                <span>Prototype</span>
+                                <span>Usability Testing</span>
+
+                            </div>
+
+
+                            <div class="project-footer">
+
+                                <span class="project-role">
+                                    Individual UI/UX Project
+                                </span>
+
+                                <a
+                                    href="projects/bus-kalbar.html"
+                                    class="text-link"
+                                >
+                                    View Case Study →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+
+                <div class="section-action reveal">
+
+                    <a
+                        href="projects.html"
+                        class="btn btn-secondary"
+                    >
+                        Explore All Projects
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EXPERIENCE
+        ================================================== -->
+
+        <section
+            class="experience section"
+            id="experience"
+        >
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <span class="section-number">
+                        03 · Experience
+                    </span>
+
+                    <h2 class="section-title">
+                        Leadership, documentation,
+                        and organizational systems.
+                    </h2>
+
+                </div>
+
+
+
+                <div class="experience-timeline">
+
+                    <article class="experience-item reveal">
+
+                        <div class="timeline-marker"></div>
+
+
+                        <div class="experience-content">
+
+                            <div class="experience-header">
+
+                                <div>
+
+                                    <span class="experience-period">
+                                        Semester 4 — Present
+                                    </span>
+
+                                    <h3>
+                                        Sekretaris Umum
+                                    </h3>
+
+                                    <p class="experience-organization">
+                                        HIMASI — Himpunan Mahasiswa Sistem Informasi
+                                    </p>
+
+                                </div>
+
+
+
+                                <div class="experience-stats">
+
+                                    <div class="stat">
+
+                                        <strong>
+                                            22
+                                        </strong>
+
+                                        <span>
+                                            Members
+                                        </span>
+
+                                    </div>
+
+                                    <div class="stat">
+
+                                        <strong>
+                                            10+
+                                        </strong>
+
+                                        <span>
+                                            Activities
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <ul class="experience-list">
+
+                                <li>
+                                    Managed organizational correspondence,
+                                    proposals, reports, meeting minutes,
+                                    certificates, and archives.
+                                </li>
+
+                                <li>
+                                    Developed administrative templates
+                                    and documentation standards.
+                                </li>
+
+                                <li>
+                                    Coordinated administrative activities
+                                    across members and organizational programs.
+                                </li>
+
+                                <li>
+                                    Contributed to improving the structure
+                                    and consistency of organizational records.
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+
+                <div class="section-action reveal">
+
+                    <a
+                        href="experience.html"
+                        class="btn btn-secondary"
+                    >
+                        View Experience
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ACHIEVEMENT & CERTIFICATIONS
+        ================================================== -->
+
+        <section
+            class="credentials section"
+            id="achievements"
+        >
+
+            <div class="container">
+
+
+                <div class="credentials-grid">
+
+
+                    <!-- =====================================
+                         ACHIEVEMENT
+                    ====================================== -->
+
+                    <div class="achievement-area">
+
+
+                        <div class="section-header reveal">
+
+                            <span class="section-number">
+                                04 · Achievement
+                            </span>
+
+                            <h2 class="section-title">
+                                Recognition
+                            </h2>
+
+                        </div>
+
+
+
+                        <article class="achievement-card reveal">
+
+                            <div class="achievement-icon">
+                                🏆
+                            </div>
+
+                            <span class="achievement-place">
+                                2nd Place
+                            </span>
+
+                            <h3>
+                                Best Visual &amp; Aesthetics
+                            </h3>
+
+                            <p>
+                                International SDGs Poster Competition
+                            </p>
+
+                            <span class="achievement-year">
+                                2026
+                            </span>
+
+
+                            <!--
+                                Hanya membuka modal viewer.
+                                Tidak memiliki link download.
+                            -->
+
+                            <button
+                                type="button"
+                                class="btn btn-secondary certificate-trigger"
+                                data-certificate="assets/images/achievements/sertifikat-poster.jpeg"
+                                data-title="2nd Place — Best Visual & Aesthetics"
+                                data-provider="International SDGs Poster Competition"
+                                aria-label="View SDGs competition certificate"
+                            >
+                                View Certificate
+                            </button>
+
+                        </article>
+
+                    </div>
+
+
+
+                    <!-- =====================================
+                         CERTIFICATIONS
+                    ====================================== -->
+
+                    <div
+                        class="certifications-area"
+                        id="certifications"
+                    >
+
+
+                        <div class="section-header reveal">
+
+                            <span class="section-number">
+                                05 · Certifications
+                            </span>
+
+                            <h2 class="section-title">
+                                Continuous Learning
+                            </h2>
+
+                        </div>
+
+
+
+                        <div class="certifications-grid">
+
+
+                            <!-- =============================
+                                 DICODING WEB
+                            ============================== -->
+
+                            <article class="certificate-card reveal">
+
+                                <button
+                                    type="button"
+                                    class="certificate-preview certificate-trigger"
+                                    data-certificate="assets/images/certifications/sertifikat-web.jpg"
+                                    data-title="Belajar Dasar Pemrograman Web"
+                                    data-provider="Dicoding Indonesia"
+                                    aria-label="View certificate Belajar Dasar Pemrograman Web"
+                                >
+
+                                    <img
+                                        src="assets/images/certifications/sertifikat-web.jpg"
+                                        alt="Sertifikat Belajar Dasar Pemrograman Web Dicoding"
+                                        loading="lazy"
+                                        draggable="false"
+                                    >
+
+                                </button>
+
+
+                                <div class="certificate-info">
+
+                                    <span>
+                                        Dicoding
+                                    </span>
+
+                                    <h3>
+                                        Belajar Dasar Pemrograman Web
+                                    </h3>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- =============================
+                                 DATA SCIENCE
+                            ============================== -->
+
+                            <article class="certificate-card reveal">
+
+                                <button
+                                    type="button"
+                                    class="certificate-preview certificate-trigger"
+                                    data-certificate="assets/images/certifications/sertifikat-datascientice.jpeg"
+                                    data-title="Belajar Dasar Data Science"
+                                    data-provider="Dicoding Indonesia"
+                                    aria-label="View certificate Belajar Dasar Data Science"
+                                >
+
+                                    <img
+                                        src="assets/images/certifications/sertifikat-datascientice.jpeg"
+                                        alt="Sertifikat Belajar Dasar Data Science Dicoding"
+                                        loading="lazy"
+                                        draggable="false"
+                                    >
+
+                                </button>
+
+
+                                <div class="certificate-info">
+
+                                    <span>
+                                        Dicoding
+                                    </span>
+
+                                    <h3>
+                                        Belajar Dasar Data Science
+                                    </h3>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- =============================
+                                 FINANCIAL LITERACY
+                            ============================== -->
+
+                            <article class="certificate-card reveal">
+
+                                <button
+                                    type="button"
+                                    class="certificate-preview certificate-trigger"
+                                    data-certificate="assets/images/certifications/sertifikat-finacy.jpg"
+                                    data-title="Introduction to Financial Literacy"
+                                    data-provider="Dicoding Indonesia"
+                                    aria-label="View certificate Introduction to Financial Literacy"
+                                >
+
+                                    <img
+                                        src="assets/images/certifications/sertifikat-finacy.jpg"
+                                        alt="Sertifikat Introduction to Financial Literacy Dicoding"
+                                        loading="lazy"
+                                        draggable="false"
+                                    >
+
+                                </button>
+
+
+                                <div class="certificate-info">
+
+                                    <span>
+                                        Dicoding
+                                    </span>
+
+                                    <h3>
+                                        Introduction to Financial Literacy
+                                    </h3>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+                <!-- =================================================
+             SKILLS
+        ================================================== -->
+
+        <section
+            class="skills section"
+            id="skills"
+        >
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <span class="section-number">
+                        06 · Skills
+                    </span>
+
+                    <h2 class="section-title">
+                        Tools and skills I use to build solutions.
+                    </h2>
+
+                    <p class="section-description">
+                        Technical and professional competencies developed
+                        through academic projects, organizational experience,
+                        independent learning, and real-world implementation.
+                    </p>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+
+                    <!-- =============================
+                         DEVELOPMENT
+                    ============================== -->
+
+                    <article class="skill-card reveal">
+
+                        <span class="skill-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Development
+                        </h3>
+
+                        <div class="skill-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =============================
+                         DATABASE
+                    ============================== -->
+
+                    <article class="skill-card reveal">
+
+                        <span class="skill-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Database
+                        </h3>
+
+                        <div class="skill-tags">
+
+                            <span>MySQL</span>
+                            <span>Database Design</span>
+                            <span>CRUD</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =============================
+                         DESIGN
+                    ============================== -->
+
+                    <article class="skill-card reveal">
+
+                        <span class="skill-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Design
+                        </h3>
+
+                        <div class="skill-tags">
+
+                            <span>Figma</span>
+                            <span>UI/UX Design</span>
+                            <span>User Flow</span>
+                            <span>Prototyping</span>
+                            <span>Canva</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =============================
+                         ANALYSIS
+                    ============================== -->
+
+                    <article class="skill-card reveal">
+
+                        <span class="skill-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Analysis
+                        </h3>
+
+                        <div class="skill-tags">
+
+                            <span>System Analysis</span>
+                            <span>Requirement Analysis</span>
+                            <span>UML</span>
+                            <span>DFD</span>
+                            <span>ERD</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =============================
+                         PROFESSIONAL
+                    ============================== -->
+
+                    <article class="skill-card reveal">
+
+                        <span class="skill-number">
+                            05
+                        </span>
+
+                        <h3>
+                            Professional
+                        </h3>
+
+                        <div class="skill-tags">
+
+                            <span>Project Leadership</span>
+                            <span>Documentation</span>
+                            <span>SOP</span>
+                            <span>Communication</span>
+                            <span>Team Coordination</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT CTA
+        ================================================== -->
+
+        <section
+            class="contact-cta section"
+            id="contact"
+        >
+
+            <div class="container">
+
+                <div class="contact-content reveal">
+
+                    <span class="contact-label">
+                        LET'S CONNECT
+                    </span>
+
+
+                    <h2>
+                        Let's build something meaningful.
+                    </h2>
+
+
+                    <p>
+                        I'm open to internship opportunities,
+                        collaborative projects, and conversations
+                        around information systems, web development,
+                        system analysis, and digital products.
+                    </p>
+
+
+                    <div class="contact-actions">
+
+                        <a
+                            href="mailto:burhanudinpmk@gmail.com"
+                            class="btn btn-primary"
+                        >
+                            Contact Me
+                        </a>
+
+                        <a
+                            href="contact.html"
+                            class="btn btn-secondary"
+                        >
+                            More Contact Info
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-socials">
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            LinkedIn
+                        </a>
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         Loaded from components/footer.html
+    ====================================================== -->
+
+    <footer
+        id="footer-container"
+        class="site-footer"
+    >
+    </footer>
+
+
+
+    <!-- =====================================================
+         CERTIFICATE VIEWER MODAL
+
+         Semua sertifikat dibuka di sini.
+         Tidak ada tombol download.
+         Tidak ada View Credential.
+    ====================================================== -->
+
+    <div
+        class="certificate-modal"
+        id="certificate-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="certificate-modal-title"
+        aria-describedby="certificate-modal-provider"
+        hidden
+    >
+
+
+        <!-- =============================================
+             DARK OVERLAY
+        ============================================== -->
+
+        <div
+            class="certificate-modal-overlay"
+            data-close-modal
+        >
+        </div>
+
+
+
+        <!-- =============================================
+             MODAL CONTENT
+        ============================================== -->
+
+        <div
+            class="certificate-modal-content"
+            role="document"
+        >
+
+
+            <!-- CLOSE BUTTON -->
+
+            <button
+                type="button"
+                class="certificate-modal-close"
+                id="certificate-modal-close"
+                aria-label="Close certificate viewer"
+            >
+                <span aria-hidden="true">
+                    ×
+                </span>
+            </button>
+
+
+
+            <!-- CERTIFICATE VIEWER -->
+
+            <div class="certificate-viewer">
+
+                <img
+                    id="certificate-modal-image"
+                    src=""
+                    alt=""
+                    draggable="false"
+                >
+
+            </div>
+
+
+
+            <!-- CERTIFICATE INFORMATION -->
+
+            <div class="certificate-modal-info">
+
+                <span class="certificate-modal-label">
+                    CERTIFICATE
+                </span>
+
+                <h3 id="certificate-modal-title">
+                    Certificate
+                </h3>
+
+                <p id="certificate-modal-provider">
+                </p>
+
+                <p class="certificate-modal-note">
+                    Certificate displayed for portfolio verification.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+    <button
+        type="button"
+        id="back-to-top"
+        class="back-to-top"
+        aria-label="Back to top"
+        title="Back to top"
+    >
+        <span aria-hidden="true">
+            ↑
+        </span>
+    </button>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+
+    <!-- Navbar + Footer component loader -->
+
+    <script
+        src="js/components.js"
+        defer
+    ></script>
+
+
+    <!-- Global -->
+
+    <script
+        src="js/main.js"
+        defer
+    ></script>
+
+
+    <!-- Theme -->
+
+    <script
+        src="js/theme.js"
+        defer
+    ></script>
+
+
+    <!-- Navbar -->
+
+    <script
+        src="js/navbar.js"
+        defer
+    ></script>
+
+
+    <!-- Animated Hero Text -->
+
+    <script
+        src="js/text-animation.js"
+        defer
+    ></script>
+
+
+    <!-- Scroll Animation -->
+
+    <script
+        src="js/scroll-animation.js"
+        defer
+    ></script>
+
+
+</body>
+
+</html>

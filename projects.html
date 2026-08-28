@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Selected projects by Apeng, Information Systems Student focused on system analysis, web development, and UI/UX design."
+    >
+
+    <meta
+        name="author"
+        content="Apeng"
+    >
+
+    <title>
+        Projects | Apeng Portfolio
+    </title>
+
+    <link
+        rel="icon"
+        href="assets/icons/favicon.svg"
+        type="image/svg+xml"
+    >
+
+    <script>
+        (function () {
+
+            const savedTheme =
+                localStorage.getItem(
+                    "portfolio-theme"
+                );
+
+            const systemDark =
+                window.matchMedia(
+                    "(prefers-color-scheme: dark)"
+                ).matches;
+
+            if (
+                savedTheme === "dark" ||
+                (!savedTheme && systemDark)
+            ) {
+
+                document.documentElement
+                    .classList
+                    .add("dark");
+
+            }
+
+        })();
+    </script>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="css/pages/projects.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <header
+        id="navbar-container"
+        class="site-header"
+    >
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="projects-page-hero section">
+
+            <div class="container">
+
+                <div class="projects-page-hero-content">
+
+                    <span class="section-number">
+                        PROJECTS
+                    </span>
+
+                    <h1>
+                        From problem understanding
+                        to digital solution.
+                    </h1>
+
+                    <p>
+                        Selected academic and real-world projects
+                        demonstrating how I approach system analysis,
+                        interface design, database structure,
+                        and implementation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT INTRO -->
+
+        <section class="project-intro section">
+
+            <div class="container">
+
+                <div class="project-intro-grid">
+
+                    <div class="project-intro-title reveal reveal-left">
+
+                        <span class="section-number">
+                            01 · Approach
+                        </span>
+
+                        <h2>
+                            Each project starts with a problem.
+                        </h2>
+
+                    </div>
+
+                    <div class="project-intro-content reveal reveal-right">
+
+                        <p>
+                            Saya melihat proyek bukan hanya sebagai
+                            aktivitas membuat antarmuka atau menulis kode,
+                            tetapi sebagai proses memahami konteks,
+                            kebutuhan pengguna, alur kerja, dan tujuan sistem.
+                        </p>
+
+                        <p>
+                            Karena itu, setiap project case study
+                            menampilkan konteks masalah, peran saya,
+                            proses analisis, solusi, teknologi,
+                            dan hasil akhirnya.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURED PROJECTS -->
+
+        <section class="projects-showcase section">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <span class="section-number">
+                        02 · Featured Work
+                    </span>
+
+                    <h2 class="section-title">
+                        Selected projects.
+                    </h2>
+
+                    <p class="section-description">
+                        Two projects that currently represent
+                        my strongest work in development and UI/UX.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-showcase-list">
+
+                    <!-- MAJAS -->
+
+                    <article class="project-showcase-card reveal">
+
+                        <div class="project-showcase-image">
+
+                            <a href="https://majas1990.gt.tc/?i=1">
+
+                                <img
+                                    src="assets/images/projects/majas/web.jpg"
+                                    alt="Majas Coffee Roastery Website"
+                                    loading="lazy"
+                                >
+
+                            </a>
+
+                            <span class="project-showcase-type">
+                                Real Client Project
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-showcase-content">
+
+                            <div class="project-showcase-meta">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <span>
+                                    Web Development
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Majas Coffee Roastery
+                            </h3>
+
+                            <p>
+                                A dynamic company profile and product
+                                management website developed for a real
+                                UMKM client to strengthen brand clarity,
+                                digital presence, and product information.
+                            </p>
+
+
+                            <div class="project-showcase-details">
+
+                                <div>
+
+                                    <span>
+                                        Role
+                                    </span>
+
+                                    <strong>
+                                        Project Leader & Developer
+                                    </strong>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Team
+                                    </span>
+
+                                    <strong>
+                                        3 People
+                                    </strong>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Duration
+                                    </span>
+
+                                    <strong>
+                                        1 Semester
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="project-showcase-tags">
+
+                                <span>System Analysis</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>CRUD</span>
+                                <span>Authentication</span>
+
+                            </div>
+
+
+                            <div class="project-showcase-actions">
+
+                                <a
+                                    href="projects/majas-coffee-roastery.html"
+                                    class="btn btn-primary"
+                                >
+                                    View Case Study
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BUS KALBAR -->
+
+                    <article class="project-showcase-card reverse reveal">
+
+                        <div class="project-showcase-image">
+
+                            <a href="/projects/bus-kalbar.html">
+
+                                <img
+                                    src="assets/images/projects/bus-kalbar/buskalbar desain.jpg"
+                                    alt="Bus Kalbar UI UX Design"
+                                    loading="lazy"
+                                >
+
+                            </a>
+
+                            <span class="project-showcase-type">
+                                UI/UX Academic Project
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-showcase-content">
+
+                            <div class="project-showcase-meta">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <span>
+                                    UI/UX Design
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Bus Kalbar
+                            </h3>
+
+                            <p>
+                                A mobile bus ticket booking prototype
+                                designed to provide a clearer reservation
+                                process for passengers in West Kalimantan.
+                            </p>
+
+
+                            <div class="project-showcase-details">
+
+                                <div>
+
+                                    <span>
+                                        Role
+                                    </span>
+
+                                    <strong>
+                                        UI/UX Designer
+                                    </strong>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Type
+                                    </span>
+
+                                    <strong>
+                                        Individual Project
+                                    </strong>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Tool
+                                    </span>
+
+                                    <strong>
+                                        Figma
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="project-showcase-tags">
+
+                                <span>User Flow</span>
+                                <span>UI Design</span>
+                                <span>Prototype</span>
+                                <span>Usability Testing</span>
+                                <span>Mobile Design</span>
+
+                            </div>
+
+
+                            <div class="project-showcase-actions">
+
+                                <a
+                                    href="projects/bus-kalbar.html"
+                                    class="btn btn-primary"
+                                >
+                                    View Case Study
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CAPABILITIES -->
+
+        <section class="project-capabilities section">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <span class="section-number">
+                        03 · What These Projects Show
+                    </span>
+
+                    <h2 class="section-title">
+                        More than implementation.
+                    </h2>
+
+                </div>
+
+
+                <div class="project-capability-grid">
+
+                    <article class="project-capability-card reveal">
+
+                        <span>01</span>
+
+                        <h3>
+                            Problem Analysis
+                        </h3>
+
+                        <p>
+                            Understanding the issue before defining
+                            features or choosing technology.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-capability-card reveal">
+
+                        <span>02</span>
+
+                        <h3>
+                            Requirement Thinking
+                        </h3>
+
+                        <p>
+                            Translating user and business needs
+                            into structured system requirements.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-capability-card reveal">
+
+                        <span>03</span>
+
+                        <h3>
+                            User-Centered Design
+                        </h3>
+
+                        <p>
+                            Creating flows and interfaces that
+                            support clear user interaction.
+                        </p>
+
+                    </article>
+
+
+                    <article class="project-capability-card reveal">
+
+                        <span>04</span>
+
+                        <h3>
+                            Technical Implementation
+                        </h3>
+
+                        <p>
+                            Converting system ideas into
+                            functional web-based solutions.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="projects-page-cta section">
+
+            <div class="container">
+
+                <div class="projects-page-cta-content reveal">
+
+                    <span>
+                        NEXT
+                    </span>
+
+                    <h2>
+                        Let's talk about opportunities.
+                    </h2>
+
+                    <p>
+                        I am currently building my experience
+                        through projects and am open to internship
+                        opportunities in information systems,
+                        analysis, and web development.
+                    </p>
+
+                    <a
+                        href="contact.html"
+                        class="btn btn-primary"
+                    >
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer
+        id="footer-container"
+        class="site-footer"
+    >
+    </footer>
+
+
+    <button
+        type="button"
+        id="back-to-top"
+        class="back-to-top"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+
+    <script src="js/components.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/scroll-animation.js" defer></script>
+
+</body>
+
+</html>

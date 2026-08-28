@@ -1,0 +1,978 @@
+/* =========================================================
+   CONTACT.CSS
+   Modern Contact Page
+   Blue / Cyan / Violet
+   Light + Dark Mode
+========================================================= */
+
+
+/* =========================================================
+   CONTACT HERO
+========================================================= */
+
+.contact-page-hero {
+    position: relative;
+
+    min-height: 68vh;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    padding-top:
+        calc(
+            var(--navbar-height)
+            + var(--space-20)
+        );
+
+    overflow: hidden;
+}
+
+
+.contact-page-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 620px;
+    height: 620px;
+
+    top: -220px;
+    right: -180px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37, 99, 235, 0.18),
+            rgba(6, 182, 212, 0.05) 45%,
+            transparent 72%
+        );
+
+    pointer-events: none;
+}
+
+
+.contact-page-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    left: -180px;
+    bottom: -140px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124, 58, 237, 0.08),
+            transparent 72%
+        );
+
+    pointer-events: none;
+}
+
+
+.contact-page-hero .container {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.contact-page-hero-content {
+    max-width: 980px;
+}
+
+
+.contact-page-hero h1 {
+    margin-top:
+        var(--space-4);
+
+    max-width: 930px;
+
+    font-size:
+        clamp(
+            3rem,
+            8vw,
+            6.8rem
+        );
+
+    letter-spacing:
+        -0.065em;
+
+    line-height:
+        0.98;
+}
+
+
+.contact-page-hero p {
+    max-width: 680px;
+
+    margin-top:
+        var(--space-8);
+
+    font-size:
+        var(--font-size-md);
+
+    color:
+        var(--color-text-secondary);
+}
+
+
+/* =========================================================
+   CONTACT OPTIONS
+========================================================= */
+
+.contact-options-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        var(--space-5);
+}
+
+
+.contact-option-card {
+    position: relative;
+
+    min-height: 290px;
+
+    padding:
+        var(--space-6);
+
+    overflow: hidden;
+
+    border-radius:
+        24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--color-surface),
+            var(--color-surface-secondary)
+        );
+
+    border:
+        1px solid
+        rgba(37, 99, 235, 0.10);
+
+    box-shadow:
+        var(--shadow-xs);
+
+    transition:
+        transform var(--transition-base),
+        border-color var(--transition-base),
+        box-shadow var(--transition-base);
+}
+
+
+.contact-option-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    top: -60px;
+    right: -60px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(37, 99, 235, 0.07);
+}
+
+
+.contact-option-card:hover {
+    transform:
+        translateY(-7px);
+
+    border-color:
+        rgba(37, 99, 235, 0.26);
+
+    box-shadow:
+        var(--shadow-blue);
+}
+
+
+.contact-option-icon {
+    position: relative;
+
+    z-index: 2;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 44px;
+    min-height: 44px;
+
+    margin-bottom:
+        var(--space-8);
+
+    padding:
+        10px;
+
+    border-radius:
+        14px;
+
+    background:
+        var(--gradient-primary);
+
+    color:
+        #ffffff;
+
+    font-size:
+        var(--font-size-sm);
+
+    font-weight:
+        var(--font-weight-semibold);
+
+    box-shadow:
+        0 8px 20px
+        rgba(37, 99, 235, 0.18);
+}
+
+
+.contact-option-card h3 {
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom:
+        var(--space-4);
+
+    font-size:
+        var(--font-size-xl);
+}
+
+
+.contact-option-card p {
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom:
+        var(--space-6);
+
+    color:
+        var(--color-text-secondary);
+}
+
+
+/* =========================================================
+   AVAILABILITY
+========================================================= */
+
+.contact-availability-card {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.2fr)
+        minmax(280px, 0.8fr);
+
+    gap:
+        var(--space-10);
+
+    align-items: center;
+
+    padding:
+        var(--space-8);
+
+    border-radius:
+        30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(37, 99, 235, 0.08),
+            rgba(6, 182, 212, 0.03),
+            var(--color-surface)
+        );
+
+    border:
+        1px solid
+        rgba(37, 99, 235, 0.14);
+
+    box-shadow:
+        var(--shadow-blue);
+}
+
+
+.availability-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap:
+        8px;
+
+    margin-bottom:
+        var(--space-5);
+
+    padding:
+        7px
+        12px;
+
+    border-radius:
+        var(--radius-round);
+
+    background:
+        rgba(16, 185, 129, 0.10);
+
+    color:
+        var(--color-success);
+
+    font-size:
+        var(--font-size-xs);
+
+    font-weight:
+        var(--font-weight-semibold);
+}
+
+
+.availability-status::before {
+    content: "";
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background:
+        var(--color-success);
+
+    box-shadow:
+        0 0 0 5px
+        rgba(16, 185, 129, 0.10);
+}
+
+
+.availability-content h2 {
+    max-width: 720px;
+
+    font-size:
+        clamp(
+            2.2rem,
+            5vw,
+            3.7rem
+        );
+
+    letter-spacing:
+        -0.05em;
+}
+
+
+.availability-content p {
+    max-width: 680px;
+
+    margin-top:
+        var(--space-5);
+
+    color:
+        var(--color-text-secondary);
+}
+
+
+.availability-list {
+    display: grid;
+
+    gap:
+        var(--space-3);
+}
+
+
+.availability-list > div {
+    padding:
+        var(--space-4);
+
+    border-radius:
+        16px;
+
+    background:
+        rgba(37, 99, 235, 0.05);
+
+    border:
+        1px solid
+        rgba(37, 99, 235, 0.10);
+}
+
+
+.availability-list span {
+    display: block;
+
+    margin-bottom:
+        5px;
+
+    font-size:
+        var(--font-size-xs);
+
+    color:
+        var(--color-text-muted);
+}
+
+
+.availability-list strong {
+    display: block;
+
+    font-size:
+        var(--font-size-sm);
+
+    color:
+        var(--color-text-primary);
+
+    font-weight:
+        var(--font-weight-semibold);
+}
+
+
+/* =========================================================
+   CONTACT TOPICS
+========================================================= */
+
+.contact-topics-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        var(--space-4);
+}
+
+
+.contact-topic-card {
+    position: relative;
+
+    min-height: 240px;
+
+    padding:
+        var(--space-6);
+
+    overflow: hidden;
+
+    border-radius:
+        22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--color-surface),
+            var(--color-surface-secondary)
+        );
+
+    border:
+        1px solid
+        rgba(37, 99, 235, 0.10);
+
+    box-shadow:
+        var(--shadow-xs);
+
+    transition:
+        transform var(--transition-base),
+        border-color var(--transition-base),
+        box-shadow var(--transition-base);
+}
+
+
+.contact-topic-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 110px;
+    height: 110px;
+
+    right: -55px;
+    top: -55px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(6, 182, 212, 0.06);
+}
+
+
+.contact-topic-card:hover {
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(37, 99, 235, 0.24);
+
+    box-shadow:
+        var(--shadow-blue);
+}
+
+
+.contact-topic-card > span {
+    position: relative;
+
+    z-index: 2;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    margin-bottom:
+        var(--space-8);
+
+    border-radius:
+        12px;
+
+    background:
+        rgba(37, 99, 235, 0.08);
+
+    color:
+        var(--color-primary);
+
+    font-size:
+        var(--font-size-xs);
+
+    font-weight:
+        var(--font-weight-semibold);
+}
+
+
+.contact-topic-card h3 {
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom:
+        var(--space-3);
+
+    font-size:
+        var(--font-size-lg);
+}
+
+
+.contact-topic-card p {
+    position: relative;
+
+    z-index: 2;
+
+    font-size:
+        var(--font-size-sm);
+
+    color:
+        var(--color-text-secondary);
+}
+
+
+/* =========================================================
+   DIRECT CONTACT CTA
+========================================================= */
+
+.contact-direct {
+    position: relative;
+
+    min-height: 62vh;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+.contact-direct::before {
+    content: "";
+
+    position: absolute;
+
+    width: 720px;
+    height: 720px;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37, 99, 235, 0.12),
+            rgba(6, 182, 212, 0.04) 45%,
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+.contact-direct-content {
+    position: relative;
+
+    z-index: 2;
+
+    width:
+        min(
+            100%,
+            920px
+        );
+
+    margin-inline: auto;
+
+    padding:
+        clamp(
+            2rem,
+            6vw,
+            5rem
+        );
+
+    text-align: center;
+
+    border-radius:
+        34px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(37, 99, 235, 0.08),
+            rgba(6, 182, 212, 0.03),
+            var(--color-surface)
+        );
+
+    border:
+        1px solid
+        rgba(37, 99, 235, 0.14);
+
+    box-shadow:
+        0 28px 80px
+        rgba(37, 99, 235, 0.10);
+}
+
+
+.contact-direct-content > span {
+    display: inline-flex;
+
+    padding:
+        7px
+        12px;
+
+    border-radius:
+        var(--radius-round);
+
+    background:
+        rgba(37, 99, 235, 0.08);
+
+    color:
+        var(--color-primary);
+
+    font-size:
+        var(--font-size-xs);
+
+    font-weight:
+        var(--font-weight-semibold);
+
+    letter-spacing:
+        0.12em;
+}
+
+
+.contact-direct-content h2 {
+    margin-top:
+        var(--space-5);
+
+    font-size:
+        clamp(
+            3rem,
+            8vw,
+            5.8rem
+        );
+
+    letter-spacing:
+        -0.06em;
+}
+
+
+.contact-direct-content p {
+    max-width: 620px;
+
+    margin:
+        var(--space-6)
+        auto
+        var(--space-8);
+
+    color:
+        var(--color-text-secondary);
+}
+
+
+.contact-direct-actions {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap:
+        var(--space-3);
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+html.dark
+.contact-option-card,
+
+html.dark
+.contact-topic-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.96),
+            rgba(17, 28, 51, 0.96)
+        );
+
+    border-color:
+        rgba(96, 165, 250, 0.10);
+}
+
+
+html.dark
+.contact-availability-card,
+html.dark
+.contact-direct-content {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(37, 99, 235, 0.13),
+            rgba(6, 182, 212, 0.04),
+            rgba(15, 23, 42, 0.96)
+        );
+
+    border-color:
+        rgba(96, 165, 250, 0.14);
+
+    box-shadow:
+        0 28px 80px
+        rgba(0, 0, 0, 0.28);
+}
+
+
+html.dark
+.availability-list > div {
+    background:
+        rgba(59, 130, 246, 0.08);
+
+    border-color:
+        rgba(96, 165, 250, 0.12);
+}
+
+
+html.dark
+.contact-topic-card > span {
+    color:
+        #60a5fa;
+
+    background:
+        rgba(59, 130, 246, 0.10);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .contact-options-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+
+    .contact-options-grid
+    .contact-option-card:last-child {
+        grid-column:
+            1 / -1;
+    }
+
+
+    .contact-availability-card {
+        grid-template-columns: 1fr;
+
+        gap:
+            var(--space-8);
+    }
+
+
+    .contact-topics-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .contact-page-hero {
+        min-height: auto;
+
+        padding-top:
+            calc(
+                var(--navbar-height)
+                + var(--space-16)
+            );
+
+        padding-bottom:
+            var(--space-12);
+    }
+
+
+    .contact-options-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-options-grid
+    .contact-option-card:last-child {
+        grid-column: auto;
+    }
+
+
+    .contact-option-card {
+        min-height: auto;
+    }
+
+
+    .contact-availability-card {
+        padding:
+            var(--space-6);
+
+        border-radius:
+            24px;
+    }
+
+
+    .contact-topics-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .contact-page-hero h1 {
+        font-size:
+            clamp(
+                2.7rem,
+                14vw,
+                4rem
+            );
+    }
+
+
+    .contact-option-card {
+        padding:
+            var(--space-5);
+
+        border-radius:
+            18px;
+    }
+
+
+    .contact-availability-card {
+        padding:
+            var(--space-5);
+
+        border-radius:
+            20px;
+    }
+
+
+    .availability-list {
+        gap:
+            var(--space-2);
+    }
+
+
+    .contact-topics-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-topic-card {
+        min-height: auto;
+
+        border-radius:
+            18px;
+    }
+
+
+    .contact-direct {
+        min-height: auto;
+    }
+
+
+    .contact-direct-content {
+        padding:
+            var(--space-8)
+            var(--space-5);
+
+        border-radius:
+            24px;
+    }
+
+
+    .contact-direct-actions {
+        flex-direction: column;
+    }
+
+
+    .contact-direct-actions
+    .btn {
+        width: 100%;
+    }
+
+}

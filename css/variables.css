@@ -1,0 +1,540 @@
+/* =========================================================
+   VARIABLES.CSS
+   Final Design Tokens
+   Modern Portfolio UI
+   Blue / Cyan / Violet
+========================================================= */
+
+:root {
+
+    /* =====================================================
+       FONT FAMILY
+    ====================================================== */
+
+    --font-primary:
+        "Inter",
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+
+    /* =====================================================
+       FONT SIZE
+    ====================================================== */
+
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-md: 1.125rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    --font-size-3xl: 2.75rem;
+    --font-size-4xl: 4rem;
+
+
+    /* =====================================================
+       FONT WEIGHT
+    ====================================================== */
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+
+    /* =====================================================
+       LINE HEIGHT
+    ====================================================== */
+
+    --line-height-tight: 1.15;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.7;
+
+
+    /* =====================================================
+       LETTER SPACING
+    ====================================================== */
+
+    --tracking-tight: -0.04em;
+    --tracking-normal: 0;
+    --tracking-wide: 0.08em;
+    --tracking-wider: 0.12em;
+
+
+    /* =====================================================
+       BRAND COLORS
+    ====================================================== */
+
+    --color-primary: #2563eb;
+
+    --color-primary-light: #3b82f6;
+
+    --color-primary-soft: #60a5fa;
+
+    --color-primary-dark: #1d4ed8;
+
+
+    --color-secondary: #06b6d4;
+
+    --color-secondary-light: #22d3ee;
+
+    --color-secondary-dark: #0891b2;
+
+
+    --color-violet: #7c3aed;
+
+    --color-violet-light: #8b5cf6;
+
+    --color-violet-dark: #6d28d9;
+
+
+    /* =====================================================
+       STATUS COLORS
+       Bisa dipakai nanti jika dibutuhkan
+    ====================================================== */
+
+    --color-success: #10b981;
+
+    --color-warning: #f59e0b;
+
+    --color-danger: #ef4444;
+
+    --color-info: #0ea5e9;
+
+
+    /* =====================================================
+       BRAND GRADIENTS
+    ====================================================== */
+
+    --gradient-primary:
+        linear-gradient(
+            135deg,
+            #2563eb 0%,
+            #06b6d4 100%
+        );
+
+
+    --gradient-secondary:
+        linear-gradient(
+            135deg,
+            #2563eb 0%,
+            #7c3aed 100%
+        );
+
+
+    --gradient-blue-violet:
+        linear-gradient(
+            135deg,
+            #3b82f6 0%,
+            #8b5cf6 100%
+        );
+
+
+    --gradient-cyan-violet:
+        linear-gradient(
+            135deg,
+            #06b6d4 0%,
+            #7c3aed 100%
+        );
+
+
+    --gradient-text:
+        linear-gradient(
+            90deg,
+            #2563eb 0%,
+            #06b6d4 50%,
+            #7c3aed 100%
+        );
+
+
+    /* =====================================================
+       LIGHT ACCENT BACKGROUNDS
+       Digunakan untuk badge/card/tag
+    ====================================================== */
+
+    --color-primary-alpha-04:
+        rgba(37, 99, 235, 0.04);
+
+    --color-primary-alpha-05:
+        rgba(37, 99, 235, 0.05);
+
+    --color-primary-alpha-06:
+        rgba(37, 99, 235, 0.06);
+
+    --color-primary-alpha-08:
+        rgba(37, 99, 235, 0.08);
+
+    --color-primary-alpha-10:
+        rgba(37, 99, 235, 0.10);
+
+    --color-primary-alpha-12:
+        rgba(37, 99, 235, 0.12);
+
+    --color-primary-alpha-15:
+        rgba(37, 99, 235, 0.15);
+
+    --color-primary-alpha-18:
+        rgba(37, 99, 235, 0.18);
+
+    --color-primary-alpha-20:
+        rgba(37, 99, 235, 0.20);
+
+    --color-primary-alpha-25:
+        rgba(37, 99, 235, 0.25);
+
+    --color-primary-alpha-30:
+        rgba(37, 99, 235, 0.30);
+
+
+    --color-secondary-alpha-05:
+        rgba(6, 182, 212, 0.05);
+
+    --color-secondary-alpha-08:
+        rgba(6, 182, 212, 0.08);
+
+    --color-secondary-alpha-10:
+        rgba(6, 182, 212, 0.10);
+
+    --color-secondary-alpha-12:
+        rgba(6, 182, 212, 0.12);
+
+    --color-secondary-alpha-15:
+        rgba(6, 182, 212, 0.15);
+
+    --color-secondary-alpha-20:
+        rgba(6, 182, 212, 0.20);
+
+
+    --color-violet-alpha-05:
+        rgba(124, 58, 237, 0.05);
+
+    --color-violet-alpha-08:
+        rgba(124, 58, 237, 0.08);
+
+    --color-violet-alpha-10:
+        rgba(124, 58, 237, 0.10);
+
+    --color-violet-alpha-15:
+        rgba(124, 58, 237, 0.15);
+
+
+    /* =====================================================
+       SPACING SYSTEM
+    ====================================================== */
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-7: 1.75rem;
+    --space-8: 2rem;
+    --space-9: 2.25rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-14: 3.5rem;
+    --space-16: 4rem;
+    --space-18: 4.5rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-28: 7rem;
+    --space-32: 8rem;
+
+
+    /* =====================================================
+       CONTAINER / LAYOUT
+    ====================================================== */
+
+    --container-width: 1200px;
+
+    --container-padding: 1.5rem;
+
+    --navbar-height: 72px;
+
+
+    /* =====================================================
+       BORDER RADIUS
+       Modern rounded system
+    ====================================================== */
+
+    --radius-xs: 6px;
+
+    --radius-sm: 10px;
+
+    --radius-md: 14px;
+
+    --radius-lg: 18px;
+
+    --radius-xl: 22px;
+
+    --radius-2xl: 28px;
+
+    --radius-3xl: 36px;
+
+    --radius-round: 999px;
+
+
+    /* =====================================================
+       BORDER WIDTH
+    ====================================================== */
+
+    --border-thin: 1px;
+
+    --border-medium: 2px;
+
+
+    /* =====================================================
+       SHADOW SYSTEM
+    ====================================================== */
+
+    --shadow-xs:
+        0 2px 8px
+        rgba(15, 23, 42, 0.04);
+
+
+    --shadow-sm:
+        0 6px 18px
+        rgba(15, 23, 42, 0.06);
+
+
+    --shadow-md:
+        0 12px 35px
+        rgba(15, 23, 42, 0.08);
+
+
+    --shadow-lg:
+        0 20px 55px
+        rgba(15, 23, 42, 0.12);
+
+
+    --shadow-xl:
+        0 30px 80px
+        rgba(15, 23, 42, 0.16);
+
+
+    /* =====================================================
+       BRAND SHADOW
+    ====================================================== */
+
+    --shadow-blue:
+        0 14px 40px
+        rgba(37, 99, 235, 0.12);
+
+
+    --shadow-blue-hover:
+        0 22px 60px
+        rgba(37, 99, 235, 0.20);
+
+
+    --shadow-cyan:
+        0 14px 40px
+        rgba(6, 182, 212, 0.12);
+
+
+    --shadow-violet:
+        0 14px 40px
+        rgba(124, 58, 237, 0.12);
+
+
+    /* =====================================================
+       INNER SHADOW
+    ====================================================== */
+
+    --shadow-inner:
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.10);
+
+
+    /* =====================================================
+       BLUR
+    ====================================================== */
+
+    --blur-sm: 8px;
+
+    --blur-md: 14px;
+
+    --blur-lg: 24px;
+
+    --blur-xl: 40px;
+
+
+    /* =====================================================
+       TRANSITION
+    ====================================================== */
+
+    --transition-instant: 0.1s ease;
+
+    --transition-fast: 0.2s ease;
+
+    --transition-base: 0.35s ease;
+
+    --transition-slow: 0.6s ease;
+
+
+    /* =====================================================
+       EASING
+    ====================================================== */
+
+    --ease-default:
+        cubic-bezier(
+            0.4,
+            0,
+            0.2,
+            1
+        );
+
+
+    --ease-smooth:
+        cubic-bezier(
+            0.22,
+            1,
+            0.36,
+            1
+        );
+
+
+    --ease-bounce:
+        cubic-bezier(
+            0.34,
+            1.56,
+            0.64,
+            1
+        );
+
+
+    /* =====================================================
+       ANIMATION
+    ====================================================== */
+
+    --animation-fast: 0.4s;
+
+    --animation-base: 0.7s;
+
+    --animation-slow: 1s;
+
+
+    /* =====================================================
+       Z INDEX SYSTEM
+    ====================================================== */
+
+    --z-background: -1;
+
+    --z-base: 1;
+
+    --z-content: 10;
+
+    --z-dropdown: 100;
+
+    --z-sticky: 300;
+
+    --z-navbar: 500;
+
+    --z-overlay: 800;
+
+    --z-modal: 1000;
+
+    --z-toast: 1200;
+
+
+    /* =====================================================
+       ICON SIZE
+    ====================================================== */
+
+    --icon-xs: 16px;
+
+    --icon-sm: 20px;
+
+    --icon-md: 24px;
+
+    --icon-lg: 32px;
+
+    --icon-xl: 48px;
+
+
+    /* =====================================================
+       BUTTON HEIGHT
+    ====================================================== */
+
+    --button-height-sm: 38px;
+
+    --button-height-md: 44px;
+
+    --button-height-lg: 50px;
+
+
+    /* =====================================================
+       CARD PADDING
+    ====================================================== */
+
+    --card-padding-sm: 1rem;
+
+    --card-padding-md: 1.5rem;
+
+    --card-padding-lg: 2rem;
+
+
+    /* =====================================================
+       GLASS EFFECT
+    ====================================================== */
+
+    --glass-light:
+        rgba(255, 255, 255, 0.72);
+
+    --glass-medium:
+        rgba(255, 255, 255, 0.82);
+
+    --glass-dark:
+        rgba(15, 23, 42, 0.78);
+
+
+    /* =====================================================
+       IMAGE OVERLAY
+    ====================================================== */
+
+    --image-overlay-light:
+        linear-gradient(
+            180deg,
+            transparent 55%,
+            rgba(37, 99, 235, 0.12)
+        );
+
+
+    --image-overlay-dark:
+        linear-gradient(
+            180deg,
+            transparent 50%,
+            rgba(15, 23, 42, 0.28)
+        );
+
+
+    /* =====================================================
+       GLOW SYSTEM
+    ====================================================== */
+
+    --glow-blue:
+        radial-gradient(
+            circle,
+            rgba(37, 99, 235, 0.16),
+            transparent 70%
+        );
+
+
+    --glow-cyan:
+        radial-gradient(
+            circle,
+            rgba(6, 182, 212, 0.12),
+            transparent 70%
+        );
+
+
+    --glow-violet:
+        radial-gradient(
+            circle,
+            rgba(124, 58, 237, 0.10),
+            transparent 70%
+        );
+
+}
